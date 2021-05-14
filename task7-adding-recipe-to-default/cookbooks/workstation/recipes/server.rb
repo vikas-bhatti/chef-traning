@@ -22,3 +22,4 @@ file '/var/www/html/index.html' do
     mode '0755'
     action :create
 end
+
