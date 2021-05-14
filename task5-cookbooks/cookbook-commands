@@ -1,0 +1,18 @@
+[root@ip-172-31-16-115 chef-traning]# mkdir cookbooks
+[root@ip-172-31-16-115 chef-traning]# chef generate cookbook cookbooks/workstation
+Generating cookbook workstation
+- Ensuring correct cookbook content
+
+Your cookbook is ready. Type `cd cookbooks/workstation` to enter it.
+
+There are several commands you can run to get started locally developing and testing your cookbook.
+Type `delivery local --help` to see a full list of local testing commands.
+
+Why not start by writing an InSpec test? Tests for the default recipe are stored at:
+
+test/integration/default/default_test.rb
+
+If you'd prefer to dive right in, the default recipe can be found at:
+
+recipes/default.rb
+
