@@ -1,0 +1,2 @@
+chef-client -zr 'recipe[workstation::server]'
+
