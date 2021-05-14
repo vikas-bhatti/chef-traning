@@ -1,0 +1,78 @@
+solution >>>1
+[root@ip-172-31-16-115 task7-adding-recipe-to-default]# chef-client -z -r "recipe[workstation::server]"
+[2021-05-14T06:08:03+00:00] WARN: No config file found or specified on command line. Using command line options instead.
+Starting Chef Infra Client, version 17.0.242
+Patents: https://www.chef.io/patents
+resolving cookbooks for run list: ["workstation::server"]
+Synchronizing Cookbooks:
+  - workstation (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 4 resources
+Recipe: workstation::server
+  * yum_package[httpd] action remove
+    - remove package httpd
+  * yum_package[httpd] action install
+    - install version 0:2.4.46-1.amzn2.x86_64 of package httpd
+  * service[httpd] action enable
+    - enable service service[httpd]
+  * service[httpd] action start
+    - start service service[httpd]
+  * file[/var/www/html/index.html] action create (up to date)
+
+Running handlers:
+Running handlers complete
+Chef Infra Client finished, 4/5 resources updated in 13 seconds
+
+
+solution>>>>2
+[root@ip-172-31-16-115 task7-adding-recipe-to-default]# chef-client -z -r "recipe[workstation::default]"
+[2021-05-14T06:10:35+00:00] WARN: No config file found or specified on command line. Using command line options instead.
+Starting Chef Infra Client, version 17.0.242
+Patents: https://www.chef.io/patents
+resolving cookbooks for run list: ["workstation::default"]
+Synchronizing Cookbooks:
+  - workstation (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 4 resources
+Recipe: workstation::server
+  * yum_package[httpd] action remove
+    - remove package httpd
+  * yum_package[httpd] action install
+    - install version 0:2.4.46-1.amzn2.x86_64 of package httpd
+  * service[httpd] action enable
+    - enable service service[httpd]
+  * service[httpd] action start
+    - start service service[httpd]
+  * file[/var/www/html/index.html] action create (up to date)
+
+Running handlers:
+Running handlers complete
+Chef Infra Client finished, 4/5 resources updated in 13 seconds
+
+solution>>>3
+[root@ip-172-31-16-115 task7-adding-recipe-to-default]# chef-client -z -r "recipe[workstation]"
+[2021-05-14T06:11:44+00:00] WARN: No config file found or specified on command line. Using command line options instead.
+Starting Chef Infra Client, version 17.0.242
+Patents: https://www.chef.io/patents
+resolving cookbooks for run list: ["workstation"]
+Synchronizing Cookbooks:
+  - workstation (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 4 resources
+Recipe: workstation::server
+  * yum_package[httpd] action remove
+    - remove package httpd
+  * yum_package[httpd] action install
+    - install version 0:2.4.46-1.amzn2.x86_64 of package httpd
+  * service[httpd] action enable
+    - enable service service[httpd]
+  * service[httpd] action start
+    - start service service[httpd]
+  * file[/var/www/html/index.html] action create (up to date)
+
+Running handlers:
+Running handlers complete
+Chef Infra Client finished, 4/5 resources updated in 13 seconds
