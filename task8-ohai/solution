@@ -1,0 +1,8 @@
+chef-client -zr "recipe[apache]"
+
+
+output::
+
+Hello, World
+IPADDRESS: 172.31.16.115
+HOSTNAME: ip-172-31-16-115
