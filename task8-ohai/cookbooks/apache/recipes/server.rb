@@ -1,4 +1,7 @@
 package 'httpd' do
+    action :remove
+end
+package 'httpd' do
     action :install
 end
 file '/var/www/html/index.html' do
