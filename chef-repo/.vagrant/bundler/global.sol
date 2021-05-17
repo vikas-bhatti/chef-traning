@@ -1,0 +1,1 @@
+{"dependencies":[["vagrant-ohai",["= 0.1.13"]]],"checksum":"fe9e0cdb27f949bed9523ecd2a08a159a2d78abc58d05b45cae080e6d24e6dbc","vagrant_version":"2.2.16"}
